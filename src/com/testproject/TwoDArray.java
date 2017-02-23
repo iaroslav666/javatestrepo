@@ -1,8 +1,6 @@
 package com.testproject;
 
-/**
- * Created by iaroslav.goliiad on 2/17/2017.
- */
+
 public class TwoDArray {
     public static void main(String args[]) {
         int twoD[][] = new int[4][5];

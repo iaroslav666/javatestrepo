@@ -1,8 +1,6 @@
 package com.testproject;
 
-/**
- * Created by iaroslav.goliiad on 2/15/2017.
- */
+
 class IfSample {
     public static void main(String args[]){
        int x, y;

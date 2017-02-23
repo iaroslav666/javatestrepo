@@ -4,9 +4,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
-/**
- * Created by iaroslav.goliiad on 2/23/2017.
- */
+
 public class CalendarSeeker {
     public static void main(String[] args){
         System.out.println("Please enter the date in next format MM//DD//YYYY");
@@ -17,6 +15,7 @@ public class CalendarSeeker {
         int i;
 
         for (i=0; i<inputtedArrayOfStrings.length; i++) {
+            //if (inputtedArrayOfStrings[i])
             ArrayOfNumbers[i] = Integer.parseInt(inputtedArrayOfStrings[i].replaceAll("[^0-9]", ""));
         }
 

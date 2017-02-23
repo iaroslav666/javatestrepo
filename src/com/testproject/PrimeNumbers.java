@@ -1,9 +1,7 @@
 package com.testproject;
 import java.util.Scanner;
 
-/**
- * Created by iaroslav.goliiad on 2/22/2017.
- */
+
 public class PrimeNumbers {
     public static void main(String[] args){
         System.out.println("Please enter an integer");

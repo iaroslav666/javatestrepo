@@ -1,9 +1,7 @@
 package com.testproject;
 import java.util.Scanner;
 
-/**
- * Created by iaroslav.goliiad on 2/22/2017.
- */
+
 public class Anagram {
     public static void main(String[] args){
         char[] firstArrayOfChars, secondArrayOfChars;
