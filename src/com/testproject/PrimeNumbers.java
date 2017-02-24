@@ -4,15 +4,23 @@ import java.util.Scanner;
 
 public class PrimeNumbers {
     public static void main(String[] args){
-        System.out.println("Please enter an integer");
         Scanner in = new Scanner(System.in);
-        int index = in.nextInt();
+        int index;
         int i, j;
         boolean flag;
 
-        if (index <= 1) {
-            System.out.print("Inputted number should be more than 1, but you have typed " + index);
-        } else {
+        do {
+            flag = false;
+            System.out.println("Please enter an integer");
+            index = in.nextInt();
+            if (index <= 1) {
+                System.out.println("Inputted number should be more than 1, but you have typed " + index);
+                flag = true;
+            }
+        }
+        while(flag);
+
+        {
             for (i=2; i <=index; i++) {
                 flag = false;
                 for (j=2; j<= i/2; j++) {

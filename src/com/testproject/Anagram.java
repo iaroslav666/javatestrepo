@@ -4,19 +4,30 @@ import java.util.Scanner;
 
 public class Anagram {
     public static void main(String[] args){
-        char[] firstArrayOfChars, secondArrayOfChars;
         int i, j;
         char index;
         boolean flag;
+        String first, second;
+        char[] firstArrayOfChars, secondArrayOfChars;
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Please enter first string");
-        String first = in.nextLine();
-        System.out.println("Please enter second string");
-        String second = in.nextLine();
 
-        first = first.replaceAll("\\s","").toLowerCase();
-        second = first.replaceAll("\\s","").toLowerCase();
+        do {
+            flag = false;
+            System.out.println("Please enter first string");
+            first = in.nextLine();
+            System.out.println("Please enter second string");
+            second = in.nextLine();
+            if(first.length() != 0 && second.length() != 0)
+                flag = true;
+            else {
+                first = first.replaceAll("\\s", "").toLowerCase();
+                second = first.replaceAll("\\s", "").toLowerCase();
+
+            }
+        }
+        while(!flag);
+
         firstArrayOfChars = first.toCharArray();
         secondArrayOfChars = second.toCharArray();
 
